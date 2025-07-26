@@ -7,7 +7,8 @@ fi
 
 # Install the NVIDIA driver.
 sudo dnf install -y akmod-nvidia xorg-x11-drv-nvidia-cuda-libs &> /dev/null
-sudo akmods --force --rebuild &> /dev/null
+# This is likely not necessary.
+#sudo akmods --force --rebuild &> /dev/null
 
 # Blacklist the nouveau and nova_core drivers.
 #
