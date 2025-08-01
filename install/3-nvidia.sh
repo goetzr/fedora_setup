@@ -6,7 +6,7 @@ if ! lspci | grep -iP "vga.+nvidia" &> /dev/null; then
 fi
 
 # Install the NVIDIA driver.
-sudo dnf install -y akmod-nvidia xorg-x11-drv-nvidia-cuda-libs &> /dev/null
+sudo dnf install -y akmod-nvidia xorg-x11-drv-nvidia-cuda &> /dev/null
 # This is likely not necessary.
 #sudo akmods --force --rebuild &> /dev/null
 

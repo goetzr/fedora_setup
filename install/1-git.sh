@@ -1,8 +1,5 @@
 #! /bin/bash
 
-# Restrict the permissions of the private key.
-chmod 600 ~/.ssh/github
-
 git config --global pull.rebase true
 git config --global init.defaultBranch main
 git config --global user.name "Russ Goetz"

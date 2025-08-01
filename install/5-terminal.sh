@@ -22,7 +22,10 @@ sudo dnf install -y starship &> /dev/null
 rm -f ~/.config/starship.toml &> /dev/null || true
 stow -d ~/dotfiles starship
 
-cat << EOF >> ~/.bashrc
-# Install starship prompt.
-eval "$(starship init bash)"
-EOF
+if ! grep starship ~/.bashrc &> /dev/null; then
+	cat <<-'EOF' >> ~/.bashrc
+
+	# Install starship prompt.
+	eval "$(starship init bash)"
+	EOF
+fi
