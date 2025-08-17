@@ -15,6 +15,8 @@ if [[ -n $DISPLAY ]]; then
 	sudo dnf install -y xclip
 fi
 
+# Install the luarocks package manager for lua.
+sudo dnf install -y luarocks
 
 # Install rust.
 if [ ! -f ~/.cargo/bin/cargo ]; then
