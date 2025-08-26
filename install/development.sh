@@ -22,3 +22,6 @@ sudo dnf install -y luarocks
 if [ ! -f ~/.cargo/bin/cargo ]; then
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 fi
+
+# Install tmux.
+sudo dnf install -y tmux
