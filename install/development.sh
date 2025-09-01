@@ -35,3 +35,9 @@ cargo install esp-generate
 cargo install espflash
 cargo install cargo-espflash
 curl --proto '=https' --tlsv1.2 -LsSf https://github.com/probe-rs/probe-rs/releases/latest/download/probe-rs-tools-installer.sh | sh
+#
+# Install tmux.
+sudo dnf install -y tmux
+
+# Install the uv package manager for python.
+curl -LsSf https://astral.sh/uv/install.sh | sh
