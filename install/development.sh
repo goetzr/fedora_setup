@@ -41,3 +41,6 @@ sudo dnf install -y tmux
 
 # Install the uv package manager for python.
 curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Install the grip tool, which allows for quickly previewing markdown files rendered to HTML.
+uv tool install grip
